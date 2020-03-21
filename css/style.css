@@ -155,6 +155,11 @@ section{
     height: 76px;
     margin: 0 auto;
 }
+.specialised,
+.card{
+    background-color: #F8F8F8;
+}
+
 .specialised .container{
     padding-top: 55px;
     padding-bottom: 17px;
@@ -283,16 +288,20 @@ section{
 }
 .news-item{
     width: 558px;
+    
     background-color: #F8F8F8;
     display: flex;
     flex-direction: row;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.news-item img {
+    width: 227px;
 }
 .news-item-right{
     margin-left: 31px;
 }
 .news-info{
-    margin: 37px 0px 25px 23px;
+    margin: 37px 10px 25px 23px;
 }
 .new-date,
 .news-text{
