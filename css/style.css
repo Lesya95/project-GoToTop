@@ -8,11 +8,9 @@
     font-weight: normal;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=cyrillic');
-
 *{
     box-sizing: border-box;
 }
-
 body{
     font-family: 'MyriadProRegular', sans-serif;
     font-size: 15px;
@@ -35,15 +33,13 @@ header,
 section{
     text-transform: uppercase;
 }
-
 .menu__list a{
    font-family: 'Roboto Condensed', sans-serif;
    color: #4B4B4B; 
    font-size: 18px;
 }
-
 .container{
-    max-width: 1230px;
+    max-width: 1200px;
     margin-left: auto; 
     margin-right: auto; 
     padding-left: 15px;
@@ -78,7 +74,6 @@ section{
 .colortext{
     color: #FF5384;
 }
-
 .menu__list {
     width: 520px;
     justify-content: space-between;
@@ -86,7 +81,6 @@ section{
 .menu__list .active{
     color: #26A1E4;
 }
-
 .carousel-inner{
     height: 752px;
     background-color: rgba(0,0,0,.4);
@@ -98,13 +92,10 @@ section{
 .carousel-caption{
     position: absolute;
     top: 37%; 
-    /* transform: translateY(-40%); */
 }
-
 .darkened {
     position: relative;
-}
-   
+} 
 .darkened::before {
     content: '';
     position: absolute;
@@ -137,10 +128,15 @@ section{
 .carousel-control-prev span{
     font-size: 40px;
 }
-.p-slider{
+.p-header{
     font-size: 22px;
     height: 30px;
     text-transform: none;
+}
+.contacts-text{
+    font-size: 39px;
+    text-transform: uppercase;
+    margin-top: 8px;
 }
 .carousel-caption .btn{
     width: 145px;
@@ -149,6 +145,33 @@ section{
     font-size: 15px;
     margin-top: 55px;
     text-transform: uppercase;
+}
+.img-contacts{
+    background-image: url(../img/backgrounds/top1.jpg);
+}
+.img-news1{
+    background-image: url(../img/backgrounds/top2.jpg);
+}
+.img-news2{
+    background-image: url(../img/backgrounds/top3.jpg);
+}
+.header__content{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 755px;
+}
+.header__box{
+    background-color: rgba(0, 0, 0, 0.57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 755px;
+}
+.header__inner{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
 }
 .card img{
     width: 76px;
@@ -159,7 +182,6 @@ section{
 .card{
     background-color: #F8F8F8;
 }
-
 .specialised .container{
     padding-top: 55px;
     padding-bottom: 17px;
@@ -180,6 +202,26 @@ section{
     font-size: 16px;
     color: #353535;
     text-transform: none;
+}
+.about{
+    min-height: 791px;
+    padding: 80px 0 38px 0;
+    text-transform: none;
+    background-color: #F8F8F8;
+}
+.about-news{
+    min-height: 660px;
+}
+.about-text p,
+.list li{
+    color: #353535;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.list li{
+    list-style-type: none;
+    margin: 25px 0;
 }
 .communication{
     background-color: #26A1E4;
@@ -213,18 +255,14 @@ section{
     padding: 46px 0 75px 0;
 }
 .reviews .container{
-    padding: 0 0px 0 35px;
+    padding: 0 0px 0 20px;
 }
-.reviews-title,
-.news-title,
-.form-title{
+.title{
     color: #22A7F0;
     font-size: 35px;
     margin-bottom: 20px;
 }
-.reviews-hr,
-.news-hr,
-.form-hr{
+.hr{
     width: 75px;
     background-color: #FF5384;
     height: 2px;
@@ -245,7 +283,6 @@ section{
     color: white;
 }
 .advantages .container{
-    padding: 0 0 0 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -262,7 +299,6 @@ section{
     font-size: 50px;
     margin: 5px;
 }
-
 .advantages-hr{
     align-self: center;
     height: 2px;
@@ -281,21 +317,46 @@ section{
 .form .container{
     width: 1147px;
 }
-.news-items{
+.news-items,
+.contacts__items{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.news-item{
+.news-item,
+.contacts__item{
     width: 558px;
-    
     background-color: #F8F8F8;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
 }
-.news-item img {
+.news-item img,
+.contacts__item img {
     width: 227px;
+}
+.contacts__item img{
+    height: 210px;
+}
+.contacts-info{
+    padding: 23px 23px 34px 23px;
+    line-height: 25px;
+    text-transform: none;
+}
+.contacts-name{
+    font-size: 24px;
+    color: #353535;
+    font-weight: 600;
+    font-style: italic;
+}
+.position{
+    margin-top: 4px;
+    margin-bottom: 50px;
+}
+.position,
+.mail{
+    font-size: 16px;
+    color: #26A1E4;
 }
 .news-item-right{
     margin-left: 31px;
@@ -321,7 +382,6 @@ section{
     background-color: #F8F8F8;
     
 }
-
 .form-items{
     display: flex;
     align-items: flex-start;
@@ -344,19 +404,86 @@ section{
     color: #26234F;
     padding: 6px 12px;
 }
-
 .message{
     width: 547px;
     height: 166px;
     margin-left: 50px;
 }
-.btn{
+.form-item .btn{
     width: 547px;
     height: 48px;
     font-size: 26px;
     background-color: #26A1E4;
 }
-
+.contacts{
+    height: 500px;
+    padding: 90px 0 100px 0;
+}
+.contacts__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-title{
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.form-item input,
+textarea{
+    color: #353535;
+    line-height: 30px;
+}
+.form-message__name,
+.form-message__email,
+.form-message__message,
+.form-message__btn{
+    font-size: 27px;
+    height: 52px;
+    width: 559px;
+    border: 1px solid #707070;
+    border-radius: 2px;
+    margin: 6px 0;
+    padding: 10px;
+}
+.form-message__message{
+    height: 168px;
+}
+.form-message__btn{
+    height: 56px;
+    width: 560px;
+    background-color: #FF5384;
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
+.form-message__btn:hover{
+    background-color: rgb(252, 6, 75);
+}
+.form-message{
+    background-color: #008AAB;
+    height: 526px;
+    color: white;
+    padding: 50px 0;
+}
+.form-message__inners{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.form-message__inner{
+    align-self: center;
+}
+.form-message__info{
+    text-transform: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;   
+}
+.form-message__info-text{
+    margin: 15px 20px;
+}
+.form-message__info img{
+    margin: 15px 0;
+}
 .footer-top{
     background-color: #161616;
 }
@@ -367,7 +494,6 @@ section{
     align-items: center;
     height: 277px;
 }
-
 .footer-item__about,
 .footer-item__news,
 .footer-item__contacts{
